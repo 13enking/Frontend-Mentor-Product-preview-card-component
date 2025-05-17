@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: antiquewhite; 
     display: flex;
@@ -5,7 +9,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -14,24 +18,32 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 500px; 
+    width: 600px; 
 }
 
 .image-container {
- width: 250px; 
+ width: 50%; 
 }
 
 .product-image {
     width: 100%;
     height: 100%; 
     border-radius: 8px;
+    object-fit:cover; 
 }
+
+
 
 .text-section {
     background-color: white; 
-    padding: 0px 20px;
+
+    padding-left:30px;
+    padding-right: 30px; 
     display: column;
     justify-content: center;
+    font-family: "Montserrat";  
+    width: 50%; 
+    letter-spacing: .5px; 
 }
 
 .product-type {
@@ -40,30 +52,36 @@ body {
     margin-top: 20px; 
 }
 
-.text-section h1 {
-    font-size: 24px;
-    margin: 10px 0;
+.product-name { 
+    font-family: "Fraunces";
+    font-size: 30px; 
 }
 
-.text-section p {
-    font-size: 16px;
-    margin: 10px 0;
+.product-description {
+    font-size: 14px;
+    margin-top: 10px; 
+    color: hsl(228, 12%, 48%); 
+    line-height: 1.5; 
 }
 
 .price-container { 
     display:flex; 
     align-items: center; 
+    margin-top: 0px; 
 }
 
 .discounted-price {
-    font-size: 32px;
+    font-size: 30px;
     color: hsl(158, 36%, 37%);
+    font-weight: bold; 
+    font-family: "Fraunces";
+
 }
 
 .original-price {
     text-decoration: line-through;
     color: #999;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 10px;
 }
 
@@ -72,14 +90,15 @@ button {
     justify-content: center; 
     align-items: center; 
     gap: 10px; 
+    
     background-color: hsl(158, 36%, 37%);
     color: white;
     border: none;
     padding: 5px 0px; 
-    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 30px;
+
+    margin-bottom: 20px;
     width: 100%; 
 }
 
